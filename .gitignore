@@ -1,1 +1,15 @@
+# dependencies
 node_modules/
+
+# build outputs
+.next/
+dist/
+out/
+
+# environment files
+.env
+.env.local
+
+# OS and IDE files
+.DS_Store
+.vscode/
