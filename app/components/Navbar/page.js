@@ -47,7 +47,7 @@ export default function Navbar() {
 
       {/* Buttons */}
       <div className={styles.buttons}>
-        <Link href="/login" className={styles.login}>
+        <Link href="/components/Login" className={styles.login}>
           LOGIN
         </Link>
         <Link href="/signup" className={styles.getStarted}>

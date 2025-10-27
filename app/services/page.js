@@ -18,7 +18,7 @@ export default function ServicesPage() {
           <div className={styles.cardGrid}>
             {[
               { title: "AI Companion", desc: "Personalized mental wellness conversations, anytime." },
-              { title: "Peer Groups", desc: "Join communities that share and support each other." },
+              { title: "Peer Groups", desc: "Join communities that share and support each other.",link: "/components/PeerGroup" },
               { title: "Gamified Wellness", desc: "Achieve your goals through fun, interactive activities.", link: "/wellness" },
               { title: "Multilingual", desc: "Support available in multiple Indian languages." },
               { title: "Emergency SOS", desc: "Reach immediate help when you need it most." },

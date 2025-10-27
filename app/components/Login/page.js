@@ -4,12 +4,15 @@ import { useState } from 'react';
 import styles from './Login.module.css';
 import { FcGoogle } from 'react-icons/fc';
 import Link from 'next/link';
+import Navbar from '../Navbar/page';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   return (
+    <>
+    <Navbar/>
     <div className={styles.container}>
       <div className={styles.card}>
         <h2 className={styles.title}>Welcome to EIRA</h2>
@@ -67,11 +70,12 @@ export default function LoginPage() {
 
         <p className={styles.signupText}>
           Don’t have an account?{' '}
-          <Link href="/signup" className={styles.signupLink}>
+          <Link href="/components/Signup" className={styles.signupLink}>
             SIGN UP
           </Link>
         </p>
       </div>
     </div>
+    </>
   );
 }

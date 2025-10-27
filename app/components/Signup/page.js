@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from './Signup.module.css';
 import { FcGoogle } from 'react-icons/fc';
+import Navbar from '../Navbar/page';
 
 export default function SignupPage() {
   const [form, setForm] = useState({
@@ -23,6 +24,8 @@ export default function SignupPage() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className={styles.container}>
       {/* Header */}
       <div className={styles.header}>
@@ -108,9 +111,10 @@ export default function SignupPage() {
         </form>
 
         <p className={styles.loginLink}>
-          Already have an account? <a href="/login">Login</a>
+          Already have an account? <a href="/components/Login">Login</a>
         </p>
       </div>
     </div>
+    </>
   );
 }

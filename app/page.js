@@ -24,41 +24,7 @@ export default function HomePage() {
     <>
     {/* <Signup/> */}
     <Navbar/>
-    <Login/>
     <div className={styles.page}>
-      {/* Top Navbar */}
-      <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Image
-            src="/Ellipse13.png"
-            alt="EIRA logo"
-            width={35}
-            height={35}
-            className={styles.logoImg}
-          />
-          <span className={styles.logoText}>EIRA</span>
-        </div>
-
-        <ul className={styles.menu}>
-          {menuItems.map((item) => (
-            <li
-              key={item}
-              className={`${styles.menuItem} ${
-                active === item ? styles.active : ""
-              }`}
-              onClick={() => setActive(item)}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-
-        <div className={styles.navActions}>
-          <button className={styles.loginBtn}>Login</button>
-          <button className={styles.ctaBtn}>Get started</button>
-        </div>
-      </nav>
-
       {/* Dashboard Hero */}
       <section className={styles.hero}>
         {/* Left side */}
