@@ -17,7 +17,7 @@ export default function ServicesPage() {
           {/* Service Cards */}
           <div className={styles.cardGrid}>
             {[
-              { title: "AI Companion", desc: "Personalized mental wellness conversations, anytime." },
+              { title: "AI Companion", desc: "Personalized mental wellness conversations, anytime.", link: "/components/AiChatbot"},
               { title: "Peer Groups", desc: "Join communities that share and support each other.",link: "/components/PeerGroup" },
               { title: "Gamified Wellness", desc: "Achieve your goals through fun, interactive activities.", link: "/wellness" },
               { title: "Multilingual", desc: "Support available in multiple Indian languages." },
