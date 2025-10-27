@@ -458,3 +458,264 @@ a.secondary {
     padding-inline: 20px;
   }
 }
+
+
+
+/* QUICK ACTIONS */
+.quickActions {
+  margin: 3rem ;
+  padding: 2rem 3rem;
+  max-width: 1200px;
+  background: linear-gradient(135deg, #0f172a 20%, #020617 80%);
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.quickActions h2 {
+  color: #38bdf8;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.actionCard {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+}
+.actionCard:hover {
+  background: rgba(6,182,212,0.1);
+  border-color: #06b6d4;
+  transform: translateY(-4px);
+}
+
+/* STREAKS */
+.streaks {
+  margin: 3rem ;
+  max-width: 1200px;
+  padding: 2rem 3rem;
+  background: linear-gradient(135deg, #0f172a 20%, #020617 80%);
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(6,182,212,0.1);
+}
+.streaks h2 {
+  color: #38bdf8;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.streakGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.streakCard {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  color: #cbd5e1;
+}
+.progress {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  height: 6px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+.progress div {
+  height: 100%;
+  background: linear-gradient(90deg, #06b6d4, #38bdf8);
+}
+
+/* WEEKLY PROGRESS */
+/* .weekProgress {
+  margin: 2rem ;
+  max-width: 900px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  color: #cbd5e1;
+  text-align: center;
+}
+.progressStats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+} */
+
+/* LEADERBOARD & REWARDS */
+/* .bottomSection {
+  margin: 3rem ;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.leaderboard, .rewards {
+  background: linear-gradient(135deg, #0f172a 20%, #020617 80%);
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 25px rgba(6,182,212,0.1);
+  padding: 2rem;
+  color: #cbd5e1;
+}
+.leaderboard h3, .rewards h3 {
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+.leaderboard ul, .rewards ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.leaderboard li, .rewards li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+} */
+
+
+/* WEEKLY PROGRESS */
+.weekProgress {
+  margin: 3rem ;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  color: #cbd5e1;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.1);
+}
+.weekProgress h4 {
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+.progressStats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.progressStats div {
+  text-align: center;
+}
+.progressStats h3 {
+  color: #38bdf8;
+  font-size: 1.6rem;
+  margin: 0;
+}
+.progressStats p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* LEADERBOARD & REWARDS */
+.bottomSection {
+  margin: 3rem ;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.leaderboard, .rewards {
+  background: linear-gradient(135deg, #0f172a 20%, #020617 80%);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.1);
+  padding: 2rem;
+  color: #cbd5e1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.header h3 {
+  color: #38bdf8;
+  font-size: 1.1rem;
+}
+.points {
+  background: rgba(6, 182, 212, 0.15);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  color: #06b6d4;
+  font-weight: 600;
+}
+
+.leaderboard ul,
+.rewards ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Leaderboard Rows */
+.leaderboard li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.leaderboard li:hover {
+  background: rgba(6, 182, 212, 0.1);
+}
+.leaderboard .you {
+  background: rgba(6, 182, 212, 0.15);
+  border-color: #06b6d4;
+}
+.rank1 {
+  background: rgba(234, 179, 8, 0.1);
+  border-color: rgba(250, 204, 21, 0.3);
+}
+
+/* Rewards List */
+.rewards li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.rewards li div h4 {
+  color: #e2e8f0;
+  margin: 0;
+  font-size: 0.95rem;
+}
+.rewards li div p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+.rewards li span {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Rewards Footer Note */
+.footerNote {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
