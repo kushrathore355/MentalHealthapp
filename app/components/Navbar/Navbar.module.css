@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #0b1120;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  color: #00d5ff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navItem {
+  position: relative;
+  color: #9ca3af;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #00d5ff;
+}
+
+.active {
+  color: #00d5ff;
+}
+
+.dot {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #00d5ff;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login {
+  color: #9ca3af;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login:hover {
+  color: #00d5ff;
+}
+
+.getStarted {
+  background: linear-gradient(to right, #00d5ff, #00ffa3);
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #0d1117;
+  transition: 0.3s ease;
+}
+
+.getStarted:hover {
+  transform: scale(1.05);
+}
