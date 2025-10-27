@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useState } from "react";
+import Signup from "./components/Signup/page"
 
 export default function HomePage() {
   const [active, setActive] = useState("Home");
@@ -16,6 +17,8 @@ export default function HomePage() {
   ];
 
   return (
+    <>
+    <Signup/>
     <div className={styles.page}>
       {/* Top Navbar */}
       <nav className={styles.navbar}>
@@ -313,6 +316,7 @@ export default function HomePage() {
 
 
     </div>
+    </>
     
   );
 }
