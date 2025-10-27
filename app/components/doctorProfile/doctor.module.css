@@ -1,0 +1,216 @@
+.page {
+  background: #0b1320;
+  color: white;
+  min-height: 100vh;
+  padding: 80px 100px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.subheading {
+  text-align: center;
+  color: #9aa7b8;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left section */
+.doctorList {
+  flex: 1;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.doctorCard {
+  background: #0d1b2a;
+  border: 1px solid #1b2e45;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.doctorCard:hover,
+.active {
+  border-color: #00b3b3;
+  background: #13283f;
+}
+
+.cardLeft {
+  flex-shrink: 0;
+}
+
+.docImage {
+  border-radius: 50%;
+  border: 2px solid #00b3b3;
+}
+
+.cardCenter {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.cardCenter h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.role {
+  color: #00b3b3;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.meta {
+  display: flex;
+  gap: 15px;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.specialisation,
+.sessionType {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.specialisation span,
+.sessionType span {
+  background: #1b2e45;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+.availability {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.cardRight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1rem;
+}
+
+.ratingStar {
+  color: orange;
+}
+
+.rating {
+  font-weight: 600;
+}
+
+/* Right Form */
+.bookingForm {
+  flex: 1;
+  background: #0d1b2a;
+  border-radius: 12px;
+  padding: 25px 30px;
+  border: 1px solid #1b2e45;
+}
+
+.bookingForm h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  background: #1b2e45;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 15px;
+}
+
+.bookBtn {
+  width: 100%;
+  background: #00b3b3;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bookBtn:hover {
+  background: #02c9c9;
+}
+
+.expectBox {
+  background: #13283f;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+.expectBox h4 {
+  margin-bottom: 10px;
+  color: #00b3b3;
+}
+
+.expectBox ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.expectBox li {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 6px;
+}

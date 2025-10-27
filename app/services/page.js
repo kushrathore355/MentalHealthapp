@@ -88,7 +88,7 @@ export default function ServicesPage() {
           {/* Call To Action */}
           <div className={styles.cta}>
             <h3>Ready to Get Started?</h3>
-            <button className={styles.ctaBtn}>Book your Session</button>
+            <Link href='/components/doctorProfile' className={styles.ctaBtn}>Book your Session</Link>
           </div>
         </section>
       </div>
