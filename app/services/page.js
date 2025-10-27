@@ -23,7 +23,7 @@ export default function ServicesPage() {
               { title: "Multilingual", desc: "Support available in multiple Indian languages." },
               { title: "Emergency SOS", desc: "Reach immediate help when you need it most." },
               { title: "Doctor Support", desc: "Connect with certified wellness professionals." },
-              { title: "Quiz", desc: "Understand your emotions with guided mental health quizzes." },
+              { title: "Quiz", desc: "Understand your emotions with guided mental health quizzes.",link: "/components/Quiz" },
             ].map((service, index) => (
               <div
                 key={index}

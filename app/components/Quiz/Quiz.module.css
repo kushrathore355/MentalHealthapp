@@ -1,0 +1,125 @@
+.container {
+  background-color: #0d1117;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mainCard {
+  width: 90%;
+  max-width: 950px;
+  background: rgba(20, 25, 33, 0.7);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.backIcon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.quizCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  margin: 1.2rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quizCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.quizText h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.quizText p {
+  font-size: 0.9rem;
+  color: #e3e3e3;
+}
+
+.quizButton {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.quizButton:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.playIcon {
+  font-size: 0.9rem;
+}
+
+.aboutSection {
+  background: rgba(20, 25, 33, 0.7);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 950px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.aboutSection h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.aboutCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.aboutCards h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.aboutCards p {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .quizCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
