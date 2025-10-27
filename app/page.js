@@ -5,6 +5,8 @@ import { useState } from "react";
 import Signup from "./components/Signup/page"
 import Navbar from "./components/Navbar/page"
 import Login from "./components/Login/page"
+import Link from "next/link";
+
 
 export default function HomePage() {
   const [active, setActive] = useState("Home");
@@ -61,10 +63,10 @@ export default function HomePage() {
       <section className={styles.hero}>
         {/* Left side */}
         <div className={styles.heroLeft}>
-          <div className={styles.profile}>
+          <Link href="/components/Profile" className={styles.profileLink}>
             <div className={styles.profileIcon}>👤</div>
             <span>Your profile</span>
-          </div>
+          </Link>
         </div>
 
         {/* Right side */}

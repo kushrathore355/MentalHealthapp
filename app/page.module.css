@@ -719,3 +719,18 @@ a.secondary {
   font-size: 0.85rem;
   color: #94a3b8;
 }
+
+.profileLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+.profileLink:hover {
+  transform: scale(1.05);
+  color: #38bdf8;
+}
