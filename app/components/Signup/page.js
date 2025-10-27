@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import styles from './signup.module.css';
+import styles from './Signup.module.css';
 import { FcGoogle } from 'react-icons/fc';
 
 export default function SignupPage() {
