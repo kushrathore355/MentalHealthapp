@@ -1,0 +1,192 @@
+.container {
+  min-height: 100vh;
+  background-color: #0b1120;
+  color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #a0a0a0;
+  font-size: 16px;
+}
+
+.newEntryBtn {
+  background-color: #00e0c6;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newEntryBtn:hover {
+  background-color: #00bfa5;
+}
+
+/* Form */
+.formContainer {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.formTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input,
+.textarea,
+.inputTag {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #00e0c6;
+  border-radius: 6px;
+  color: #fff;
+  padding: 12px;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input:focus,
+.textarea:focus,
+.inputTag:focus {
+  border-color: #00bfa5;
+  box-shadow: 0 0 8px #00e0c6;
+}
+
+.textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Mood Slider */
+.moodSection {
+  margin-bottom: 20px;
+}
+
+.moodLabel {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.slider {
+  width: 100%;
+  accent-color: #00e0c6;
+}
+
+/* Tags */
+.tagForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.addBtn {
+  border: 1px solid #00e0c6;
+  background: transparent;
+  color: #00e0c6;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background: #00e0c6;
+  color: #000;
+}
+
+.tagsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background: rgba(0, 224, 198, 0.15);
+  border: 1px solid #00e0c6;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.saveBtn {
+  background-color: #00e0c6;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.saveBtn:hover {
+  background-color: #00bfa5;
+}
+
+.cancelBtn {
+  background: transparent;
+  border: 1px solid #888;
+  color: #ccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancelBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
