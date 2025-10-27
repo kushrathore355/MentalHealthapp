@@ -1,0 +1,200 @@
+.container {
+  background-color: #0b132b;
+  color: #fff;
+  min-height: 100vh;
+  padding: 3rem 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Stats Section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statBox {
+  background-color: #1a1f3b;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.08);
+  transition: 0.3s;
+}
+
+.statBox:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.2);
+}
+
+.statBox h3 {
+  font-size: 1.8rem;
+  color: #00e0ff;
+  margin: 0.3rem 0;
+}
+
+.statBox p {
+  color: #b0b6c3;
+  font-size: 0.95rem;
+}
+
+.statIcon {
+  font-size: 1.8rem;
+}
+
+/* Streak Banner */
+.streakBanner {
+  background-color: #162447;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.1);
+}
+
+.streakBanner p {
+  margin: 0;
+  color: #00ffb3;
+  font-weight: 500;
+}
+
+.streakBtn {
+  background-color: #00ffb3;
+  border: none;
+  color: #0b132b;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Activities Section */
+.sectionTitle {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #00e0ff;
+}
+
+.activitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.activityCard {
+  background-color: #1a1f3b;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.1);
+  transition: 0.3s;
+}
+
+.activityCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.15);
+}
+
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  background-color: #00ffb3;
+  color: #0b132b;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.desc {
+  color: #b0b6c3;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.activityStats {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #b0b6c3;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.playBtn {
+  background-color: #00e0ff;
+  color: #0b132b;
+}
+
+.playBtn:hover {
+  background-color: #00b8d4;
+}
+
+.startBtn {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.startBtn:hover {
+  background-color: #0096c7;
+}
+
+.dailyChallenge {
+  background-color: #1b263b;
+  margin-top: 3rem;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dailyChallenge h3 {
+  color: #ffd60a;
+  margin-bottom: 0.8rem;
+}
+
+.dailyChallenge button {
+  margin-top: 1rem;
+  background-color: #ffb703;
+  border: none;
+  color: #0b132b;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tipsSection {
+  background-color: #14213d;
+  border-radius: 12px;
+  margin-top: 2.5rem;
+  padding: 2rem;
+}
+
+.tipsSection h3 {
+  color: #00e0ff;
+  margin-bottom: 1rem;
+}
+
+.tipsSection ul {
+  color: #b0b6c3;
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}

@@ -1,6 +1,7 @@
 "use client";
 import styles from "./service.module.css";
 import Navbar from "../components/Navbar/page";
+import Link from "next/link";
 
 export default function ServicesPage() {
   return (
@@ -18,16 +19,29 @@ export default function ServicesPage() {
             {[
               { title: "AI Companion", desc: "Personalized mental wellness conversations, anytime." },
               { title: "Peer Groups", desc: "Join communities that share and support each other." },
-              { title: "Gamified Wellness", desc: "Achieve your goals through fun, interactive activities." },
+              { title: "Gamified Wellness", desc: "Achieve your goals through fun, interactive activities.", link: "/wellness" },
               { title: "Multilingual", desc: "Support available in multiple Indian languages." },
               { title: "Emergency SOS", desc: "Reach immediate help when you need it most." },
               { title: "Doctor Support", desc: "Connect with certified wellness professionals." },
               { title: "Quiz", desc: "Understand your emotions with guided mental health quizzes." },
             ].map((service, index) => (
-              <div key={index} className={styles.card}>
-                <div className={styles.icon}>💠</div>
-                <h4>{service.title}</h4>
-                <p>{service.desc}</p>
+              <div
+                key={index}
+                className={styles.card}
+              >
+                {service.link ? (
+                  <Link href={service.link} className={styles.cardLink}>
+                    <div className={styles.icon}>💠</div>
+                    <h4>{service.title}</h4>
+                    <p>{service.desc}</p>
+                  </Link>
+                ) : (
+                  <>
+                    <div className={styles.icon}>💠</div>
+                    <h4>{service.title}</h4>
+                    <p>{service.desc}</p>
+                  </>
+                )}
               </div>
             ))}
           </div>

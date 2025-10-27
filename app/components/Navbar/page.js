@@ -31,11 +31,15 @@ export default function Navbar() {
             <Link
               href={link.path}
               className={`${styles.navItem} ${
-                pathname === link.path ? styles.active : ''
+                (pathname === link.path || (pathname.startsWith('/wellness') && link.path === '/services'))
+                  ? styles.active
+                  : ''
               }`}
             >
               {link.name}
-              {pathname === link.path && <span className={styles.dot}></span>}
+              {(pathname === link.path || (pathname.startsWith('/wellness') && link.path === '/services')) && (
+                <span className={styles.dot}></span>
+              )}
             </Link>
           </li>
         ))}
