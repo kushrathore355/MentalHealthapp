@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useState } from "react";
-import Signup from "./components/Signup/page"
+// import Signup from "./components/Signup/page"
 import Navbar from "./components/Navbar/page"
 import Login from "./components/Login/page"
 import Link from "next/link";
@@ -22,7 +22,7 @@ export default function HomePage() {
 
   return (
     <>
-    <Signup/>
+    {/* <Signup/> */}
     <Navbar/>
     <Login/>
     <div className={styles.page}>
