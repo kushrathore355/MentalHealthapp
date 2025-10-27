@@ -50,7 +50,7 @@ export default function Navbar() {
         <Link href="/components/Login" className={styles.login}>
           LOGIN
         </Link>
-        <Link href="/signup" className={styles.getStarted}>
+        <Link href="/components/Quiz" className={styles.getStarted}>
           Get started
         </Link>
       </div>
